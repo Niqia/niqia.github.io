@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #d0efff;
+}
+
+.welcome h1{
+    text-align: center;
+    justify-content: center;
+    /* background-color: blueviolet; */
+    font-size: 5rem;
+    font-weight: 800;
+    /* width: 50%; */
+    color: rgb(31,68,83);
+    padding: 80px;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.nav{
+    /* margin-right: auto;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    font-size: 20px; */
+
+    display: flex;
+
+    /* padding: 30px 10%; */
+    /* justify-content: space-between;
+    align-items: center; */
+    /* margin-right: auto; */
+}
+
+.nav ul{
+  background: #03254c;
+  position: relative;
+  list-style: none;
+  /* display: inline-table; */
+  width: 100%;
+  order: 3;
+  
+}
+
+.nav ul li{
+    /* display: inline-block; */
+    float: right;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0px 0px 0px 0px;
+    margin: 30px 0px 30px 0px;
+    
+}
+
+.nav ul li a:hover{
+    background-color: #1167b1;
+}
+
+.nav ul li a{
+    transition: all 0.3s ease 0s;
+    list-style-type: none;
+    text-decoration: none;
+    /* display: block; */
+    color: whitesmoke;
+    padding: 25px;
+    
+    
+}
+
+.nav ul li a:hover{
+    color: #d0efff;
+    border-radius: 2rem;
+}
+
+.two-section{
+    max-width: 1300px;
+    margin: 0auto;
+    padding: 100px 15px 0 15px;
+}
+
+.left{
+    width: 50%;
+    color: rgb(31,68,83);
+    padding-left: 70px;
+}
+
+.left h1{
+    font-size: 5rem;
+    font-weight: 800;
+}
+
+.up{
+    position: relative;
+    top: 30px;
+}
+
+.left p{
+    padding-right: 20%;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 27px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.btn{
+    width: 120px;
+    height: 40px;
+    margin-top: 25px;
+    border:  3px solid rgb(31,68,83);
+    color: rgb(31,68,83);
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.center{
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.right{
+    width: 40%;
+    position: relative;
+}
+
+.students{
+    width: 100%;
+    border-radius: 300px;
+}
+
+.points{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: transparent;
+    /* margin: 0 20%; */
+    list-style-type: none;
+}
+
+.ani{
+    height: 50px;
+    width: 50px;
+    margin-top: 50px;
+    background-color: #2a9df4;
+    animation-name: water-circle;
+    border-radius: 50%;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    float: right;
+    font-size: 5rem;
+    font-weight: 800;
+    padding: 80px;
+  }
+  
+  @keyframes water-circle {
+    
+    0%{
+      background-color:#2a9df4;
+    }
+   
+     50%{
+      background-color:#03254c;
+    }
+     
+  }
